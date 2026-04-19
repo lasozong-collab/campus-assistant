@@ -1,0 +1,35 @@
+{
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "校园助手", "navigationStyle": "custom" } },
+    { "path": "pages/chat/index", "style": { "navigationBarTitleText": "校园助手", "navigationStyle": "custom" } },
+    { "path": "pages/schedule/index", "style": { "navigationBarTitleText": "课表", "navigationStyle": "custom" } },
+    { "path": "pages/market/index", "style": { "navigationBarTitleText": "校园集市", "navigationStyle": "custom" } },
+    { "path": "pages/discover/index", "style": { "navigationBarTitleText": "发现", "navigationStyle": "custom" } },
+    { "path": "pages/profile/index", "style": { "navigationBarTitleText": "我的", "navigationStyle": "custom" } }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4F6EF7",
+    "backgroundColor": "#F5F7FA",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4F6EF7",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页", "iconPath": "static/tab/home.png", "selectedIconPath": "static/tab/home-active.png" },
+      { "pagePath": "pages/schedule/index", "text": "课表", "iconPath": "static/tab/schedule.png", "selectedIconPath": "static/tab/schedule-active.png" },
+      { "pagePath": "pages/market/index", "text": "集市", "iconPath": "static/tab/market.png", "selectedIconPath": "static/tab/market-active.png" },
+      { "pagePath": "pages/discover/index", "text": "发现", "iconPath": "static/tab/discover.png", "selectedIconPath": "static/tab/discover-active.png" },
+      { "pagePath": "pages/profile/index", "text": "我的", "iconPath": "static/tab/profile.png", "selectedIconPath": "static/tab/profile-active.png" }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  }
+}
