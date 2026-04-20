@@ -10,5 +10,12 @@
   <body>
     <div id="app"><!--app-html--></div>
     <script type="module" src="/src/main.ts"></script>
+    <!-- Coze Web SDK -->
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/union-pj/coze-chat-sdk.umd.js"></script>
+    <script>
+      new CozeWebSDK.Chat({
+        botId: '7625170677502918656',
+      })
+    </script>
   </body>
 </html>

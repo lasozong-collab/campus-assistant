@@ -94,8 +94,9 @@ export default async function handler(req: Request) {
 
     if (chatData.code !== 0 || !chatData.data) {
       console.error('Coze API biz error:', chatData)
+      const errMsg = chatData.msg || JSON.stringify(chatData)
       return new Response(
-        JSON.stringify({ reply: 'AI 暂时无法回复，请稍后再试 🙏', error: 'Coze biz error' }),
+        JSON.stringify({ reply: `[调试] Coze错误: ${errMsg}`, error: 'Coze biz error', detail: chatData }),
         { status: 200, headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } }
       )
     }
