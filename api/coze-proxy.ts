@@ -1,3 +1,7 @@
+declare const process: {
+  env: Record<string, string | undefined>
+}
+
 /**
  * Vercel Serverless Function - Coze API 代理
  * 解决浏览器直接调用 Coze API 的 CORS 问题
